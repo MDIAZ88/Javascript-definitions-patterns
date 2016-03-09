@@ -1,0 +1,20 @@
+.container{
+	width: 80%;
+	height: auto;
+	margin: 0 auto;
+	border: 1 solid;
+}
+#sectionRigth{
+	top: 20%;
+	margin: 0 auto;
+	display: ;
+	position: relative;
+	text-align: center;
+}
+input{
+  border-radius: 0.12rem;
+  min-width: 20%;
+  height: 1.5rem;
+  width: 50%;
+  text-align: center;
+}
