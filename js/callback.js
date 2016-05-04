@@ -11,3 +11,15 @@ var showMessage = function(value, callback){
 showMessage("Marcos", function(value){
   console.log("Hola "+value);
 });
+
+/*
+TIPOS DE DATOS EN JAVASCRIPT
+
+1) Strings.
+2) Numericos.
+3) Booleanos.
+4) objetos.
+5) Arreglos.
+6) Null.
+8) Undefined.
+*/
