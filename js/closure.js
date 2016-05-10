@@ -7,6 +7,14 @@ independientes.
 Se trata de una funcion declarada dentro de otra funcion y hace uso de las variables que se encuentran en su entorno de desarrollo
 (En la funcion donde fue creada).
 
+A closure is a function defined inside another function (called the parent function), and has access to variables that are declared and defined in the parent function scope.
+
+The closure has access to variables in three scopes:
+
+--Variables declared in their own scope
+--Variables declared in a parent function scope
+--Variables declared in the global namespace
+
 */
 
 var operacion = function(){
@@ -125,3 +133,25 @@ gExecute1();
 gExecute2();
 gExecute3();
 gExecute1();
+
+//MUL FUNCTION
+
+function mul (x) {
+    return function (y) {
+        return function (z) {
+            return x * y * z;
+        };
+    };
+}
+
+/*
+Here the mul function accepts the first argument and returns an anonymous function, which takes the second parameter and returns another anonymous function that will take the third parameter and return the multiplication of the arguments that have been passed.
+
+In JavaScript, a function defined inside another one has access to the outer function's variables. Therefore, a function is a first-class object that can be returned by other functions as well and be passed as an argument in another function.
+
+A function is an instance of the Object type
+A function can have properties and has a link back to its constructor method
+A function can be stored as a variable
+A function can be pass as a parameter to another function
+A function can be returned from another function
+*/
