@@ -7,6 +7,14 @@ independientes.
 Se trata de una funcion declarada dentro de otra funcion y hace uso de las variables que se encuentran en su entorno de desarrollo
 (En la funcion donde fue creada).
 
+A closure is a function defined inside another function (called the parent function), and has access to variables that are declared and defined in the parent function scope.
+
+The closure has access to variables in three scopes:
+
+--Variables declared in their own scope
+--Variables declared in a parent function scope
+--Variables declared in the global namespace
+
 */
 
 var operacion = function(){
