@@ -133,3 +133,25 @@ gExecute1();
 gExecute2();
 gExecute3();
 gExecute1();
+
+//MUL FUNCTION
+
+function mul (x) {
+    return function (y) {
+        return function (z) {
+            return x * y * z;
+        };
+    };
+}
+
+/*
+Here the mul function accepts the first argument and returns an anonymous function, which takes the second parameter and returns another anonymous function that will take the third parameter and return the multiplication of the arguments that have been passed.
+
+In JavaScript, a function defined inside another one has access to the outer function's variables. Therefore, a function is a first-class object that can be returned by other functions as well and be passed as an argument in another function.
+
+A function is an instance of the Object type
+A function can have properties and has a link back to its constructor method
+A function can be stored as a variable
+A function can be pass as a parameter to another function
+A function can be returned from another function
+*/
